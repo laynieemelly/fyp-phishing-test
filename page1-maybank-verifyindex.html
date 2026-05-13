@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maybank2u - Secure Login Verify Account</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Arial,sans-serif;background:#f4f4f4;display:flex;
+       flex-direction:column;align-items:center;min-height:100vh}
+  .research-banner{width:100%;background:#ff9800;color:#fff;padding:10px;
+                   text-align:center;font-size:13px;font-weight:bold}
+  .card{background:#fff;border-radius:8px;padding:36px;width:380px;
+        box-shadow:0 4px 20px rgba(0,0,0,.12);margin-top:30px}
+  .logo{color:#b8262e;font-size:26px;font-weight:bold;margin-bottom:4px}
+  .subtitle{color:#666;font-size:13px;margin-bottom:20px}
+  .info-box{background:#fff3cd;border:1px solid #ffc107;border-radius:6px;
+            padding:12px;margin-bottom:18px;font-size:12px;color:#856404}
+  label{display:block;font-size:13px;color:#444;margin-bottom:4px;margin-top:14px}
+  input{width:100%;padding:10px 12px;border:1px solid #ccc;border-radius:4px;font-size:14px}
+  .btn{width:100%;background:#b8262e;color:#fff;border:none;padding:12px;
+       border-radius:4px;font-size:15px;cursor:pointer;margin-top:20px}
+  .btn:hover{background:#9a1e25}
+  .footer{font-size:11px;color:#999;text-align:center;margin-top:18px}
+  /* Intentional phishing signals for your tool to detect */
+  /* HTTP only, suspicious path, keyword 'verify' in URL  */
+</style>
+</head>
+<body>
+<div class="research-banner">
+  ⚠️ FYP RESEARCH TEST PAGE — NOT a real website. Do NOT enter real credentials.
+</div>
+<div class="card">
+  <div class="logo">maybank2u</div>
+  <div class="subtitle">Secure Account Verification — Login to Continue</div>
+  <div class="info-box">
+    <strong>FYP Test Page #1</strong><br>
+    Simulates: Maybank login clone<br>
+    Phishing signals: HTTP, keyword "verify" + "login" + "secure", newly hosted domain,
+    suspicious URL path
+  </div>
+  <label for="username">Username / IC Number</label>
+  <input type="text" id="username" placeholder="Enter your username" autocomplete="off">
+  <label for="password">Password</label>
+  <input type="password" id="password" placeholder="Enter your password">
+  <button class="btn" onclick="alert('Test page — no data submitted.')">Verify &amp; Login</button>
+  <div class="footer">
+    © FYP Research Only — NOT affiliated with Maybank in any way
+  </div>
+</div>
+</body>
+</html>

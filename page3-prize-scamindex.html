@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PayPal - Account Suspended - Confirm Details</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Arial,sans-serif;background:#f5f5f5;display:flex;
+       flex-direction:column;align-items:center;min-height:100vh}
+  .research-banner{width:100%;background:#ff9800;color:#fff;padding:10px;
+                   text-align:center;font-size:13px;font-weight:bold}
+  .card{background:#fff;border-radius:8px;padding:36px;width:420px;
+        box-shadow:0 4px 20px rgba(0,0,0,.12);margin-top:30px}
+  .logo{color:#003087;font-size:28px;font-weight:bold;margin-bottom:4px}
+  .logo span{color:#009cde}
+  .alert-box{background:#ffe8e8;border:1px solid #e74c3c;border-radius:6px;
+             padding:14px;margin-bottom:18px;font-size:13px;color:#c0392b}
+  .info-box{background:#fff3cd;border:1px solid #ffc107;border-radius:6px;
+            padding:10px;margin-bottom:16px;font-size:11px;color:#856404}
+  label{display:block;font-size:13px;color:#444;margin-bottom:4px;margin-top:14px}
+  input{width:100%;padding:10px 12px;border:1px solid #ccc;border-radius:4px;font-size:14px}
+  .btn{width:100%;background:#003087;color:#fff;border:none;padding:12px;
+       border-radius:4px;font-size:15px;cursor:pointer;margin-top:20px}
+  .btn:hover{background:#00256b}
+  .footer{font-size:11px;color:#999;text-align:center;margin-top:18px}
+</style>
+</head>
+<body>
+<div class="research-banner">
+  ⚠️ FYP RESEARCH TEST PAGE — NOT a real website. Do NOT enter real credentials.
+</div>
+<div class="card">
+  <div class="logo">Pay<span>Pal</span></div>
+  <div class="alert-box">
+    🔒 <strong>Your account has been suspended.</strong><br>
+    Unusual activity was detected. Please confirm your details to restore access immediately.
+    Failure to update within 24 hours will result in permanent account closure.
+  </div>
+  <div class="info-box">
+    <strong>FYP Test Page #2</strong><br>
+    Signals: HTTP, keywords "suspended" + "confirm" + "account" + "password",
+    urgency language, suspicious hosting, IP-based or newly registered domain
+  </div>
+  <label for="email">PayPal Email Address</label>
+  <input type="email" id="email" placeholder="Enter your email">
+  <label for="password">Password</label>
+  <input type="password" id="password" placeholder="Enter your password">
+  <label for="card">Card Number (for identity verification)</label>
+  <input type="text" id="card" placeholder="xxxx xxxx xxxx xxxx">
+  <button class="btn" onclick="alert('Test page — no data submitted.')">Confirm &amp; Restore Account</button>
+  <div class="footer">
+    © FYP Research Only — NOT affiliated with PayPal in any way
+  </div>
+</div>
+</body>
+</html>
