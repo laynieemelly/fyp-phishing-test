@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎉 Congratulations! You've Won a Free Prize - Claim Now</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Arial,sans-serif;background:linear-gradient(135deg,#f5a623,#f76b1c);
+       display:flex;flex-direction:column;align-items:center;min-height:100vh}
+  .research-banner{width:100%;background:#333;color:#ff9800;padding:10px;
+                   text-align:center;font-size:13px;font-weight:bold}
+  .card{background:#fff;border-radius:12px;padding:36px;width:420px;
+        box-shadow:0 8px 30px rgba(0,0,0,.25);margin-top:30px;text-align:center}
+  h1{color:#e67e22;font-size:22px;margin-bottom:8px}
+  .prize-box{background:#fffbea;border:2px solid #f39c12;border-radius:8px;
+             padding:18px;margin:16px 0;font-size:15px;color:#333}
+  .countdown{font-size:28px;font-weight:bold;color:#e74c3c;margin:10px 0}
+  .info-box{background:#fff3cd;border:1px solid #ffc107;border-radius:6px;
+            padding:10px;margin-bottom:16px;font-size:11px;color:#856404;text-align:left}
+  label{display:block;font-size:13px;color:#444;margin-bottom:4px;margin-top:14px;text-align:left}
+  input{width:100%;padding:10px 12px;border:1px solid #ccc;border-radius:4px;font-size:14px}
+  .btn{width:100%;background:#e74c3c;color:#fff;border:none;padding:14px;
+       border-radius:6px;font-size:16px;font-weight:bold;cursor:pointer;margin-top:20px}
+  .btn:hover{background:#c0392b}
+  .footer{font-size:11px;color:#999;margin-top:18px}
+</style>
+</head>
+<body>
+<div class="research-banner">
+  ⚠️ FYP RESEARCH TEST PAGE — NOT a real website. Do NOT enter real information.
+</div>
+<div class="card">
+  <h1>🎉 Congratulations! You Are Today's Lucky Winner!</h1>
+  <div class="prize-box">
+    You have been selected to receive a <strong>FREE iPhone 15 Pro</strong>
+    or <strong>RM 5,000 cash prize</strong>!<br><br>
+    This is a <strong>LIMITED OFFER</strong> — claim within:
+    <div class="countdown" id="timer">09:59</div>
+    or the offer expires!
+  </div>
+  <div class="info-box">
+    <strong>FYP Test Page #3</strong><br>
+    Signals: HTTP, keywords "free" + "winner" + "lucky" + "claim" + "prize" + "limited" + "click",
+    urgency manipulation, suspicious TLD, no SSL, newly registered domain
+  </div>
+  <label for="name">Full Name</label>
+  <input type="text" id="name" placeholder="Enter your full name">
+  <label for="phone">Phone Number</label>
+  <input type="text" id="phone" placeholder="Enter your phone number">
+  <label for="email">Email Address</label>
+  <input type="email" id="email" placeholder="Enter your email">
+  <button class="btn" onclick="alert('Test page — no data submitted.')">🎁 Claim My Free Prize Now!</button>
+  <div class="footer">FYP Research Only — This page is a simulated phishing test</div>
+</div>
+<script>
+  // Fake countdown for urgency manipulation effect
+  let seconds = 599;
+  const el = document.getElementById('timer');
+  setInterval(() => {
+    if (seconds > 0) seconds--;
+    const m = String(Math.floor(seconds / 60)).padStart(2, '0');
+    const s = String(seconds % 60).padStart(2, '0');
+    el.textContent = `${m}:${s}`;
+  }, 1000);
+</script>
+</body>
+</html>
